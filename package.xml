@@ -35,6 +35,7 @@
   <build_depend>qml-module-qtquick2</build_depend>
   <build_depend>qtbase5-dev</build_depend>
   <build_depend>qtdeclarative5-dev</build_depend>
+  <build_depend>qtquickcontrols2-5-dev</build_depend>
   <build_depend>tinyxml2</build_depend>
   <exec_depend>libqt5-core</exec_depend>
   <exec_depend>libqt5-qml</exec_depend>
@@ -58,6 +59,7 @@
   <exec_depend>qml-module-qtquick2</exec_depend>
   <exec_depend>qtbase5-dev</exec_depend>
   <exec_depend>qtdeclarative5-dev</exec_depend>
+  <exec_depend>qtquickcontrols2-5-dev</exec_depend>
   <exec_depend>tinyxml2</exec_depend>
   <test_depend>xvfb</test_depend>
   <depend>gz_cmake_vendor</depend>
@@ -71,7 +73,7 @@
   <depend>gz_utils_vendor</depend>
 
   <!-- Depend on the package we are vendoring to allow building it from source -->
-  <build_depend condition="$GZ_BUILD_FROM_SOURCE != ''">gz-gui8</build_depend>
+  <depend condition="$GZ_BUILD_FROM_SOURCE != ''">gz-gui8</depend>
 
   <test_depend>ament_cmake_copyright</test_depend>
   <test_depend>ament_cmake_lint_cmake</test_depend>
